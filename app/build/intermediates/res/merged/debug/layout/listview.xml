@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTotall"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_alignBaseline="@+id/textViewP1"
+        android:layout_alignBottom="@+id/textViewP1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewP2"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_below="@+id/textViewTotall"
+        android:layout_alignLeft="@+id/textViewP1"
+        android:layout_alignStart="@+id/textViewP1"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewP1"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_below="@+id/textViewPraice"
+        android:layout_alignLeft="@+id/textViewPraice"
+        android:layout_alignStart="@+id/textViewPraice"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/textViewP1"
+        android:layout_toEndOf="@+id/textViewP1">
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPraice"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

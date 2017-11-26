@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.elixi.percent.FragmentPercent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etNumber"
+        android:hint="Number"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etPercent"
+        android:layout_alignStart="@+id/etPercent"
+        android:layout_marginTop="68dp"
+        android:singleLine="false"
+        android:selectAllOnFocus="false"
+        android:textColor="?attr/colorAccent"
+        tools:textColor="@color/colorAccent"
+        tools:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/etPercent"
+        android:hint="Percent"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        tools:textColorHint="@color/colorAccent"
+        tools:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColor="?attr/colorAccent"
+        android:layout_below="@+id/etNumber"
+        android:layout_centerHorizontal="true"
+        android:imeOptions="actionDone"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        android:id="@+id/imageButton"
+        tools:background="@android:color/transparent"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+
